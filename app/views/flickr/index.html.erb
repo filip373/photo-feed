@@ -1,0 +1,4 @@
+<h1>Photos of <%= @name %></h1>
+<% @photos.each do |photo| %>
+<%= image_tag("https://farm#{photo.farm}.staticflickr.com/#{photo.server}/#{photo.id}_#{photo.secret}.jpg") %>
+<% end %>
